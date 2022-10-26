@@ -1,0 +1,12 @@
+@mixin rounded-full {
+	border-radius: 10000px;
+}
+@mixin rounded-sm {
+	border-radius: 10px;
+}
+@mixin rounded-md {
+	border-radius: 30px;
+}
+@mixin rounded-lg {
+	border-radius: 50px;
+}

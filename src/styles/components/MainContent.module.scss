@@ -1,0 +1,64 @@
+@use "../abstracts" as a;
+.main_grid {
+  padding: 30px;
+  padding-top: 100px;
+  @include a.lg {
+    display: grid;
+    grid-template-columns: 300px auto;
+    padding: 30px;
+    grid-gap: 30px;
+  }
+}
+
+.sidebar {
+  position: fixed;
+  width: 300px;
+  height: 100%;
+  background-color: a.$white;
+  z-index: 10000;
+  left: -300px;
+  padding: 20px;
+  border-radius: 0;
+  top: 76px;
+  transition: all 0.5s;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+  @include a.lg {
+    position: static;
+    box-shadow: none;
+
+    z-index: inherit;
+    background-color: a.$white;
+    padding: 30px;
+    @include a.rounded-md;
+    min-height: calc(100vh - 200px);
+  }
+}
+.sidebar_show {
+  left: 0px;
+}
+.main_content {
+  background-color: a.$white;
+  padding: 30px;
+  @include a.rounded-md;
+}
+
+.list_item {
+  margin-bottom: 20px;
+  div {
+    margin-right: 20px;
+  }
+}
+
+.launch_item {
+  width: 100%;
+  @include a.rounded-md;
+  border: 1px solid a.$dark;
+  padding: 30px;
+  margin-bottom: 20px;
+  div {
+    font-weight: 600;
+    span {
+      font-weight: 400;
+    }
+  }
+}

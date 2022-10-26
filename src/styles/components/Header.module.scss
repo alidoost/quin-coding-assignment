@@ -1,0 +1,35 @@
+@use '../abstracts/' as a;
+.header {
+	background-color: a.$white;
+	padding: 25px 25px;
+	display: flex;
+	align-items: center;
+	position: fixed;
+	width: 100%;
+	box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+	z-index: 100;
+	box-sizing: border-box;
+	@include a.lg {
+		box-shadow: none;
+		position: static;
+	}
+}
+.logo {
+	display: inline-block;
+	font-size: 22px;
+	font-weight: 900;
+	span {
+		font-weight: 300;
+		margin-right: -3px;
+	}
+}
+.bars {
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	margin-right: 10px;
+	cursor: pointer;
+	@include a.lg {
+		display: none;
+	}
+}
