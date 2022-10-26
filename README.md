@@ -1,4 +1,4 @@
-# Studocu code assignment
+# Quin code assignment
 
 ## Dependencies
 - redux-toolkit
