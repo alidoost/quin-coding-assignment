@@ -1,5 +1,5 @@
 export interface Launch {
-  id: number;
+  id: string;
   slug: string;
   name: string;
   date: string;

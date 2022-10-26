@@ -1,4 +1,28 @@
-# Getting Started with Create React App
+# Studocu code assignment
+
+## Dependencies
+- redux-toolkit
+- formik
+- sass
+- yup
+- qs
+- heroicons
+
+
+## Architecture and project structure
+
+I implemented the project with separation of concerns in mind and divided codes into files according to their functionalities to apply the Single Responsibility principle. I used `redux-toolkit` for state management. `components` folder has all of the UI Components. `app` and `features` is for the redux files.  I put all types,and interfaces in the `types` folder. `styles` folder has all the CSS files. 
+
+## Styling
+
+I used css modules and a sass for styling the components.
+ 
+## The process and Improvements
+
+I started by implementing data structure and state management part. I picked the user stories that are easier to do and tried to deliver a basic version of app that user can work with. I did not have time to implement the map if also I lost track of time so I could not do more testing to the project. If I had time I would cover more edge-cases to test. Also I would made the UI more pretty. The next step would be adding the Map, and after that trying to make rendering optimized by adding memoization. 
+
+
+# The Project
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

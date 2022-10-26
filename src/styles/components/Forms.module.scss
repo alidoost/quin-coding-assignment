@@ -1,0 +1,92 @@
+@use '../abstracts' as a;
+.button {
+	text-decoration: none;
+	@include a.rounded-full;
+	color: a.$white;
+	background-color: a.$primary;
+	padding: 8px 20px;
+	display: inline-block;
+	font-weight: 600;
+	font-size: 15px;
+	border: 1px solid a.$primary;
+	transition: all 0.2s;
+	&:hover {
+		color: a.$primary;
+		background-color: a.$white;
+	}
+}
+.success {
+	background-color: a.$success;
+	border: 1px solid a.$success;
+	&:hover {
+		color: a.$success;
+	}
+}
+.danger {
+	background-color: a.$danger;
+	border: 1px solid a.$danger;
+	&:hover {
+		color: a.$danger;
+	}
+}
+
+.warning {
+	background-color: a.$warning;
+	border: 1px solid a.$warning;
+	&:hover {
+		color: a.$warning;
+	}
+}
+
+.primary {
+	background-color: a.$primary;
+	border: 1px solid a.$primary;
+	&:hover {
+		color: a.$primary;
+	}
+}
+
+.dark {
+	background-color: a.$dark;
+	border: 1px solid a.$dark;
+	&:hover {
+		color: a.$dark;
+	}
+}
+.info {
+	background-color: a.$info;
+	border: 1px solid a.$info;
+	&:hover {
+		color: a.$info;
+	}
+}
+.input {
+	border: 1px solid #ccc;
+	padding: 10px 10px;
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	@include a.rounded-sm;
+	margin-bottom: 10px;
+	line-height: 150%;
+}
+
+.add_form_box {
+	margin-top: 20px;
+}
+.form {
+	label {
+		margin-bottom: 4px;
+		display: block;
+	}
+}
+
+.input_error {
+	border: 1px solid a.$danger;
+}
+.form_error {
+	margin-top: -10px;
+	color: a.$danger;
+	margin-bottom: 10px;
+	font-size: 14px;
+}
